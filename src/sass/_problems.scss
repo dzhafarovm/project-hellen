@@ -34,6 +34,11 @@ box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     padding-right: 22px;
 }
 
+.problems__line{
+font-size: 20px;
+letter-spacing: 0.08em;
+}
+
 .problems__item:not(:last-child){
     margin-bottom: 10px;
 }
