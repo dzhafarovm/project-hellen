@@ -78,29 +78,29 @@
     color: var(--white-color);
     fill: var(--white-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+      fill 250ms var(--cubic);
   }
 
   &:hover .card-set__svg,
   &:focus .card-set__svg {
     fill: var(--white-color);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--cubic);
   }
 
   &:hover .card-set__paragraph,
   &:focus .card-set__paragraph {
     color: var(--white-color);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic);
   }
 
   &:hover .card-set__title::after,
   &:focus .card-set__title::after {
     background-color: var(--white-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--cubic);
   }
 }
 
