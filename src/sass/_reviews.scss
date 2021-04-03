@@ -79,8 +79,6 @@
 
   @media screen and (min-width: 1280px) {
     margin-right: 40px;
-    // justify-content: flex-start;
-    // align-items: flex-start;
   }
 }
 
@@ -157,7 +155,7 @@
   line-height: 167%;
   text-align: center;
 
-  color: #3d3d3d;
+  color: var(--secondary-text-color);
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -186,7 +184,7 @@
 .reviews__student {
   max-width: 54px;
   border-radius: 100%;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   margin-right: 10px;
 
   @media screen and (min-width: 768px) {
