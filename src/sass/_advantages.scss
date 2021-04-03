@@ -1,0 +1,21 @@
+.advantages {
+  background: #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 49px;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.advantages__text {
+  margin-left: 10px;
+  width: 146px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.08em;
+}
