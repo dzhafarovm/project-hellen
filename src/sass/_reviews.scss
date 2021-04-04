@@ -1,6 +1,4 @@
 .reviews {
-  font-family: 'Montserrat', sans-serif;
-
   & .container {
     // @media screen and (min-width: 480px) {
     margin-top: 50px;
@@ -200,6 +198,6 @@
   }
 }
 
-.student__photo {
+.reviews__photosmall {
   border-radius: 100%;
 }
