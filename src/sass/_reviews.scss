@@ -254,9 +254,10 @@
     left: 0;
     background-image: url('../images/reviews/arrow1.svg');
     margin-left: -12px;
+    z-index: 10;
   }
   @media screen and (min-width: 1280px) {
-    // margin-left: -60px;
+    margin-left: -60px;
   }
 }
 
@@ -323,21 +324,12 @@
   position: relative;
   outline: none;
   max-width: 182px;
-  // height: 54px;
   margin-left: auto;
   margin-right: auto;
-  // text-align: center;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-
-.slidersmall__item {
-  // text-align: center;
-}
-
-.slick-slide.slick-center {
 }
 
 .slidersmall__item .slick-list {
@@ -373,7 +365,7 @@
 .slidersmall .slick-arrow.slick-prev {
   left: 0;
   background-image: url('../images/reviews/arrow1.svg');
-  margin-left: -60px;
+  margin-left: -53px;
 
   @media screen and (min-width: 768px) {
     // margin-left: -12px;
@@ -386,7 +378,7 @@
 .slidersmall .slick-arrow.slick-next {
   right: 0;
   background-image: url('../images/reviews/arrow2.svg');
-  margin-right: -60px;
+  margin-right: -53px;
 
   @media screen and (min-width: 768px) {
     //  margin-right: -12px;
