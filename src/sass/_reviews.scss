@@ -366,25 +366,10 @@
   left: 0;
   background-image: url('../images/reviews/arrow1.svg');
   margin-left: -53px;
-
-  @media screen and (min-width: 768px) {
-    // margin-left: -12px;
-  }
-  @media screen and (min-width: 1280px) {
-    // margin-left: -60px;
-  }
 }
 
 .slidersmall .slick-arrow.slick-next {
   right: 0;
   background-image: url('../images/reviews/arrow2.svg');
   margin-right: -53px;
-
-  @media screen and (min-width: 768px) {
-    //  margin-right: -12px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    // margin-right: -60px;
-  }
 }
