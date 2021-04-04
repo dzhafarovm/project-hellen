@@ -1,6 +1,4 @@
 .reviews {
-  font-family: 'Montserrat', sans-serif;
-
   & .container {
     // @media screen and (min-width: 480px) {
     margin-top: 50px;
@@ -176,7 +174,7 @@
   border-bottom: solid 1px var(--accent-color);
 }
 
-// Список с потографиями -------------------------------------------
+// Список с фотографиями -------------------------------------------
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
@@ -198,4 +196,8 @@
   &:last-child {
     margin-right: 0px;
   }
+}
+
+.reviews__photosmall {
+  border-radius: 100%;
 }
