@@ -154,6 +154,7 @@
   font-size: 12px;
   line-height: 167%;
   text-align: center;
+  overflow: hidden;
 
   color: var(--secondary-text-color);
 
@@ -171,8 +172,11 @@
 
 .reviews__all {
   color: var(--accent-color);
+  // text-decoration: underline;
+  border-bottom: solid 1px var(--accent-color);
 }
 
+// Список с потографиями -------------------------------------------
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
