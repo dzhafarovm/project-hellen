@@ -24,15 +24,37 @@
 .advantages-border {
   width: 58px;
   height: 60px;
-  border: 2px solid #ff6b09;
+  border: 2px solid var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: -1;
 
   @media screen and(min-width: 1344px) {
     width: 100px;
     height: 102px;
+  }
+
+  &__men {
+    @media screen and(min-width: 1344px) {
+      width: 40px;
+      height: 48px;
+    }
+  }
+
+  &__phone {
+    @media screen and(min-width: 1344px) {
+      width: 48px;
+      height: 47px;
+    }
+  }
+
+  &__dolar {
+    @media screen and(min-width: 1344px) {
+      width: 42px;
+      height: 48px;
+    }
   }
 }
 
@@ -57,11 +79,14 @@
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.08em;
+  background-color: var(--white-color);
 
   @media screen and(min-width: 1344px) {
     font-weight: bold;
     font-size: 20px;
-    line-height: 164.9%;
-    width: 100%;
+    line-height: 1.64;
+    width: 366px;
+    height: 66px;
+    margin-left: -16px;
   }
 }
