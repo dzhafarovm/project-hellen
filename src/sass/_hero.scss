@@ -81,12 +81,10 @@
   line-height: 1.57;
   letter-spacing: 0.08em;
   color: var(--dark-color);
-  margin-bottom: 30px;
 
   @media screen and (min-width: 1344px) {
     font-size: 20px;
     line-height: 1.649;
-    margin-bottom: 40px;
   }
 }
 
@@ -99,13 +97,22 @@
   color: var(--accent-color);
 }
 
+.hero__text--dark {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
 .hero__btn {
   display: block;
   box-sizing: border-box;
   width: 260px;
   height: 48px;
   padding: 14px 0;
-  margin: 0 auto 30px;
+  margin: 30px auto;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.25;
@@ -123,6 +130,7 @@
     width: 354px;
     height: 70px;
     padding: 27px 0;
+    margin-top: 40px;
     
     font-size: 14px;
     line-height: 1.21;
