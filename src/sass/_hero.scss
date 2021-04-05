@@ -46,6 +46,16 @@
   }
 }
 
+.container__hero {
+  @media screen and (min-width: 768px) {
+    max-width: 332px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    max-width: 642px;
+  }
+}
+
 .hero__title {
   font-weight: 800;
   font-size: 20px;
