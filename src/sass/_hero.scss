@@ -1,0 +1,121 @@
+.hero {
+  // background-color: azure;
+  max-width: 480px;
+  height: 618px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 109.5px;
+  padding-bottom: 254.5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero/hero.png), url(../images/hero/Vector_tablet.png);
+  background-repeat: no-repeat;
+  background-size: 208px, 768px;
+  background-position: center bottom 47px, left -64px top 0;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/hero/hero@2x.png'), url(../images/hero/Vector_tablet@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 557px;
+    padding-top: 158px;
+    padding-bottom: 93px;
+    background-image: url('../images/hero/hero_tablet.png'), url(../images/hero/Vector_tablet.png);
+    background-size: 376px, 768px;
+    background-position: right 18px bottom 64px, left top;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/hero_tablet@2x.png'), url(../images/hero/Vector_tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1344px) {
+    max-width: 1680px;
+    height: 878px;
+    padding-top: 228.5px;
+    padding-bottom: 144.5px;
+    background-image: url('../images/hero/hero_desktop.png'), url(../images/hero/Vector_desktop.png);
+    background-size: 842px 718px, 1680px;
+    background-position: right 54px bottom 10px, left top;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/hero_desktop@2x.png'), url("../images/hero/Vector_desktop@2x.png");
+    }
+  }
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  color: var(--dark-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.30;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 58px;
+    margin-bottom: 24px;
+  }
+}
+
+.hero__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.649;
+    margin-bottom: 40px;
+  }
+}
+
+.hero__text--grey {
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.hero__text--accent {
+  color: var(--accent-color);
+}
+
+.hero__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 48px;
+  padding: 14px 0;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 354px;
+    height: 70px;
+    padding: 27px 0;
+    
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+  }
+}
