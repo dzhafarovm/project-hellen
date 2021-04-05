@@ -18,14 +18,11 @@ p {
 // }
 
 .program {
-  // background-color: #111518;
-
   @media (max-width: 768px) {
     & {
       background: linear-gradient(180deg, var(--dark-color) 87%, #e5e5e5 87%);
 
       padding-top: 50px;
-      // padding-bottom: 537px;
     }
   }
 
@@ -34,44 +31,14 @@ p {
       background: linear-gradient(180deg, var(--dark-color) 87%, #e5e5e5 87%);
 
       padding-top: 60px;
-      // padding-bottom: 392px;
     }
   }
   @media (min-width: 1344px) {
     & {
       background: linear-gradient(180deg, var(--dark-color) 87%, #e5e5e5 87%);
       padding-top: 120px;
-      // margin-bottom: 363px;
     }
   }
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-
-  //   width: 1px;
-  //   background-color: var(--white-color);
-  //   z-index: 1;
-
-  //   @media (max-width: 768px) {
-  //     & {
-  //       height: 1282px;
-  //       margin-top: 7px;
-  //     }
-  //   }
-
-  //   @media (min-width: 768px) {
-  //     & {
-  //       height: 705px;
-  //       margin-top: 7px;
-  //     }
-  //   }
-  //   @media (min-width: 1344px) {
-  //     height: 1px;
-  //     width: 100%;
-  //     margin: 0;
-  //   }
-  // }
 }
 
 .program--title {
@@ -96,7 +63,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 14px;
-  line-height: 2;
+  // line-height: 2;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   position: relative;
@@ -113,7 +80,6 @@ p {
 
   @media (min-width: 768px) {
     & {
-      // display: flex;
       padding-left: 56px;
     }
 
@@ -135,36 +101,37 @@ p {
       margin-bottom: 164px;
     }
   }
-
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   display: block;
-  //   width: 12px;
-  //   height: 12px;
-  //   border-radius: 50%;
-  //   background-color: var(--accent-color);
-  //   z-index: 2;
-  //   @media (min-width: 1344px) {
-  //     transform: translatey(-65px);
-  //   }
-
-  //   @media (max-width: 768px) {
-  //     transform: translate(-31px);
-  //     margin-top: 7px;
-  //   }
-
-  //   @media (min-width: 768px) {
-  //     transform: translate(-62px);
-  //     margin-top: 7px;
-  //   }
-  // }
 }
 .program-list__paragraph {
   @media (min-width: 1344px) {
     font-size: 30px;
     line-height: 1.4;
     letter-spacing: 0.08em;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      left: -6px;
+    }
+
+    @media (min-width: 768px) {
+      left: -6px;
+    }
+    @media (min-width: 1344px) {
+      top: -65px;
+
+      position: relative;
+      margin-left: 7px;
+    }
   }
 }
 
@@ -270,21 +237,6 @@ p {
     background-color: var(--white-color);
     z-index: 1;
 
-    // @media (max-width: 768px) {
-    //   & {
-    //     height: 1105px;
-    //     margin-top: 51px;
-    //     margin-left: 88px;
-    //   }
-    // }
-
-    // @media (min-width: 768px) {
-    //   & {
-    //     height: 650px;
-    //     margin-top: 60px;
-    //     margin-left: 159px;
-    //   }
-    // }
     @media (min-width: 1344px) {
       height: 1px;
       width: 150%;
@@ -293,16 +245,6 @@ p {
     }
   }
 }
-
-// .program--grid__semestr {
-//   padding-bottom: 5px;
-
-//   @media (min-width: 1344px) {
-//     & {
-//       padding-bottom: 25px;
-//     }
-//   }
-// }
 
 .program__title {
   color: var(--white-color);
@@ -338,33 +280,9 @@ p {
 }
 
 .program-list__item {
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    z-index: 2;
-
-    @media (max-width: 768px) {
-      transform: translate(-31px);
-    }
-
-    @media (min-width: 768px) {
-      transform: translate(-62px);
-    }
-    @media (min-width: 1344px) {
-      transform: translatey(-72px);
-      margin-top: 7px;
-    }
-  }
-
   @media (max-width: 1343px) {
     &:not(:last-child) {
       border-left: 1px solid var(--white-color);
-      margin-right: 26px;
     }
   }
 }
