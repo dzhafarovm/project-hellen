@@ -73,13 +73,12 @@
   @media screen and (min-width: 768px) {
     font-size: 20px;
     margin-bottom: 0px;
-    padding-right: 24px;
+    margin-right: 24px;
   }
 
   @media screen and (min-width: 1344px) {
     font-size: 30px;
     line-height: 123%;
-    // margin-right: 16px;
     margin-bottom: 0px;
   }
 }
@@ -101,7 +100,8 @@
   }
 }
 
-.footer__instagramlink {
+.footer_line {
+  display: flex;
   @media screen and (min-width: 768px) {
     padding-left: 24px;
     border-left: solid 1px var(--grey-color);
@@ -114,6 +114,7 @@
 .footer__instagram {
   width: 40px;
   height: 40px;
+  border-radius: 2%;
 }
 
 .footer__end {
