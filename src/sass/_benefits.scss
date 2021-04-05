@@ -47,14 +47,14 @@
 
 .benefits-grid {
   @media (min-width: 768px) {
-    width: 472px;
+    // width: 472px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 98px;
+    // padding-left: 98px;
   }
 
   @media (min-width: 1344px) {
-    width: 1344px;
+    // width: 1344px;
     padding: 0;
   }
 

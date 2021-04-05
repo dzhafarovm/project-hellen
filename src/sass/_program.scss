@@ -106,8 +106,8 @@ p {
     & {
       padding-left: 26px;
     }
-    &:not(:first-child) {
-      padding-top: 40px;
+    &:not(:last-child) {
+      padding-bottom: 40px;
     }
   }
 
@@ -118,8 +118,8 @@ p {
     }
 
     @media (min-width: 768px) and (max-width: 1344px) {
-      &:not(:first-child) {
-        padding-top: 30px;
+      &:not(:last-child) {
+        padding-bottom: 30px;
       }
     }
   }
@@ -136,29 +136,29 @@ p {
     }
   }
 
-  &::before {
-    @media (min-width: 1344px) {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      z-index: 2;
-      transform: translatey(-65px);
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: block;
+  //   width: 12px;
+  //   height: 12px;
+  //   border-radius: 50%;
+  //   background-color: var(--accent-color);
+  //   z-index: 2;
+  //   @media (min-width: 1344px) {
+  //     transform: translatey(-65px);
+  //   }
 
-      //   @media (max-width: 768px) {
-      //     transform: translate(-31px);
-      //     margin-top: 7px;
-      //   }
+  //   @media (max-width: 768px) {
+  //     transform: translate(-31px);
+  //     margin-top: 7px;
+  //   }
 
-      //   @media (min-width: 768px) {
-      //     transform: translate(-62px);
-      //     margin-top: 7px;
-      //   }
-    }
-  }
+  //   @media (min-width: 768px) {
+  //     transform: translate(-62px);
+  //     margin-top: 7px;
+  //   }
+  // }
 }
 .program-list__paragraph {
   @media (min-width: 1344px) {
@@ -179,10 +179,6 @@ p {
     & {
       flex-direction: column;
     }
-  }
-
-  &__hidden {
-    color: var(--dark-color);
   }
 
   &__title {
@@ -231,6 +227,9 @@ p {
     letter-spacing: 0.08em;
 
     color: var(--grey-color);
+  }
+  &__hidden {
+    color: var(--dark-color);
   }
 }
 
@@ -335,5 +334,37 @@ p {
     align-items: center;
     margin-left: -40px;
     margin-top: 7px;
+  }
+}
+
+.program-list__item {
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      transform: translate(-31px);
+    }
+
+    @media (min-width: 768px) {
+      transform: translate(-62px);
+    }
+    @media (min-width: 1344px) {
+      transform: translatey(-72px);
+      margin-top: 7px;
+    }
+  }
+
+  @media (max-width: 1343px) {
+    &:not(:last-child) {
+      border-left: 1px solid var(--white-color);
+      margin-right: 26px;
+    }
   }
 }
