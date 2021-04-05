@@ -4,11 +4,12 @@
         <p class="request">Оставь заявку на участие в <span class="accent">бесплатном занятии.</span> С вами свяжется консультант и <br> ответит на вопросы</p>
         <form class="form">
             <label class="form-label">
-                <input type="text" class="form-input" name="text" placeholder="Имя*" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Имя*">
+                <input type="text" class="form-input" name="name" placeholder="Имя*"  required>
+                <!-- pattern="[A-Za-zА-Яа-яЁё] -->
             </label>
             <label class="form-label">
-                <input type="tel"  class="form-input" name="phone_number" placeholder="Телефон*" pattern="2-[0-9]{3}-[0-9]{3}"
-       required>
+                <input type="tel"  class="form-input" name="phone_number" placeholder="Телефон*" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="10" maxlength="13">
+                <span class="form-error">Это поле должно содержать телефон в формате +38 (123) 456-78-90</span>
             </label>
         </form>
         <button type="submit" class="btn">
