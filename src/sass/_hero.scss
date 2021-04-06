@@ -88,22 +88,20 @@
   }
 }
 
-.hero__text--grey {
+.hero__grey {
   font-weight: 500;
   color: var(--grey-color);
 }
 
-.hero__text--accent {
-  color: var(--accent-color);
+.hero__dark {
+  width: 280px;
+  @media screen and (min-width: 1344px) {
+    width: 540px;
+  }
 }
 
-.hero__text--dark {
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
+.hero__accent {
+  color: var(--accent-color);
 }
 
 .hero__btn {
@@ -123,7 +121,7 @@
   background-color: var(--accent-color);
 
   @media screen and (min-width: 768px) {
-    margin: 0;
+    margin: 30px 0 0;
   }
 
   @media screen and (min-width: 1344px) {
