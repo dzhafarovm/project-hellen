@@ -340,11 +340,11 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
 
-  & .slick-slider {
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
+.slidersmall .slick-slider {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
