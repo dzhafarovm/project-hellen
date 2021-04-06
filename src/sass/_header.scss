@@ -149,6 +149,7 @@
  box-sizing: border-box;
  margin: 0;
  background-color: transparent;
+ border: transparent;
  fill: #ffffff;
 
  &:hover,
@@ -157,10 +158,6 @@
    fill: var(--accent-color);
  }
  transform: fill 250ms var(--cubic);
-}
-
-.menu-toggle svg {
-  fill: #ffffff;
 }
 
 .mobile-nav {
