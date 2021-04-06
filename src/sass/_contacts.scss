@@ -1,0 +1,139 @@
+.contacts {
+  max-width: 767px;
+  min-width: 320px;
+  height: 507px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background: linear-gradient(rgba(17, 21, 24, 0.8) 100%, rgba(17, 21, 24, 0.8) 100%),
+    url(../images/contacts/DSC_09702.jpg);
+  // background-image: url(../images/DSC_09702.jpg);
+  // background-color: rgba(17, 21, 24, 1);
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container {
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.registration {
+  min-width: 280px;
+  text-align: center;
+  padding-right: auto;
+  padding-left: auto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.request {
+  min-width: 280px;
+  text-align: center;
+  padding-right: auto;
+  padding-left: auto;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-input {
+  width: 280px;
+  height: 48px;
+  border: 1px solid var(--white-color);
+  box-sizing: border-box;
+  padding: 15px 28px;
+  background: transparent;
+
+  &:not(:last-child) {
+    margin-top: 20px;
+  }
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: var(--white-color);
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) + .form-error {
+  display: block;
+}
+
+.form-error {
+  width: 362px;
+  color: red;
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+.btn {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 260px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--accent-color);
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-text {
+  padding: 14px, 5px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
