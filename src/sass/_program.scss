@@ -46,6 +46,7 @@
   margin-left: 75px;
   display: flex;
   align-items: stretch;
+  position: relative;
   @media screen and (min-width: 768px) {
     margin-left: 80px;
   }
@@ -76,7 +77,9 @@
   @media screen and (min-width: 1344px) {
     display: flex;
     margin-left: 0;
-    margin-bottom: 189px;
+    margin-bottom: 129px;
+
+    margin-left: 121px;
   }
 }
 
@@ -228,13 +231,13 @@
   }
 }
 
-.program-list__box {
+.program-list__boximg {
   position: absolute;
-  background-color: yellow;
+  // background-color: yellow;
 
   @media screen and (max-width: 767px) {
-    left: 60%;
-    bottom: 29%;
+    left: 52%;
+    bottom: -7%;
     width: 176px;
     height: 137px;
   }
@@ -242,14 +245,14 @@
   @media screen and (min-width: 768px) {
     width: 384px;
     height: 280px;
-    left: 60%;
-    bottom: 26%;
+    left: 56%;
+    bottom: -14%;
   }
   @media screen and (min-width: 1344px) {
     width: 760px;
     height: 502px;
-    left: -14%;
-    bottom: 8%;
+    left: -2%;
+    bottom: -27%;
     z-index: 1;
   }
 }
