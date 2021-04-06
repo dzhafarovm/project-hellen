@@ -5,12 +5,12 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
+  // padding-right: 15px;
+  // padding-left: 15px;
   padding-bottom: 50px;
 
   background: linear-gradient(rgba(17, 21, 24, 0.8) 100%, rgba(17, 21, 24, 0.8) 100%),
-    url(../images/contacts/DSC_09702.jpg);
+    url(../images/contacts/DSC_09702.png);
   background-repeat: no-repeat;
   // object-position: left-bottom;
   background-position: center;
@@ -50,8 +50,10 @@ img {
 .contacts__registration {
   min-width: 280px;
   text-align: center;
-  padding-right: 65px;
-  padding-left: 65px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-family: Montserrat;
   font-weight: 700;
@@ -87,8 +89,8 @@ img {
 
 .contacts__request {
   min-width: 280px;
-  padding-right: 70px;
-  padding-left: 70px;
+  padding-right: 35px;
+  padding-left: 35px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -214,13 +216,19 @@ input:invalid:not(:placeholder-shown) + .form-error {
   display: flex;
   margin-top: 30px;
   margin-left: auto;
+  padding: 14px 10px;
   margin-right: auto;
 
   align-items: center;
   justify-content: center;
+  border: transparent;
 
   background-color: var(--accent-color);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 10px;
+  }
 
   @media screen and (min-width: 1344px) {
     min-width: 354px;
@@ -230,7 +238,6 @@ input:invalid:not(:placeholder-shown) + .form-error {
 }
 
 .contacts__btn-text {
-  padding: 14px 0px;
   align-items: center;
   text-align: center;
   justify-content: center;
