@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  
   width: 100%;
   margin-top: 30px;
 
@@ -46,6 +47,12 @@
     &:not(:last-child) {
         margin-right: 40px;
     }
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--accent-color);
+    }
+   transform: color 250ms var(--cubic);
 }
 
 .nav__link {
@@ -69,6 +76,10 @@
     display: none;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1344px) {
+      margin-left: auto;
+  }
+
   @media (min-width: 1344px) {
     width: 336px;
     height: 70px;
@@ -82,8 +93,9 @@
   box-sizing: border-box;
    // border: none;
   padding: 0;
+  margin-left: 40px;
   width: 21px;
-  height: 12px;
+  height: 13px;
   background-color: transparent;
 
    @media (min-width: 1344px) {
@@ -98,7 +110,8 @@
 }
 
 .menu__svg {
-    fill: #000000;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-container {
@@ -173,8 +186,12 @@
   
 .menu__item {
   color: var(--white-color);
-    &--current {
-       color: var(--accent-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--accent-color);
     }
+  transform: color 250ms var(--cubic); 
  }
   
