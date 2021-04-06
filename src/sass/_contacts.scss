@@ -26,6 +26,7 @@
   }
   .container {
     min-width: 320px;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -49,8 +50,8 @@ img {
 .contacts__registration {
   min-width: 280px;
   text-align: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 65px;
+  padding-left: 65px;
 
   font-family: Montserrat;
   font-weight: 700;
@@ -63,6 +64,8 @@ img {
     min-width: 688px;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 
     font-weight: 800;
     font-size: 26px;
@@ -72,6 +75,8 @@ img {
     min-width: 1092px;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 100px;
+    padding-left: 100px;
 
     text-align: center;
     font-weight: 800;
@@ -82,6 +87,8 @@ img {
 
 .contacts__request {
   min-width: 280px;
+  padding-right: 70px;
+  padding-left: 70px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -91,16 +98,17 @@ img {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.08em;
   color: var(--white-color);
 
   @media screen and (min-width: 768px) {
     min-width: 452px;
-    // margin-left: auto;
-    // margin-right: auto;
-    padding-right: 158px;
-    padding-left: 158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 120px;
+    padding-left: 120px;
     margin-bottom: 40px;
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
@@ -137,9 +145,14 @@ img {
   padding-bottom: 15px;
   background: transparent;
 
+  // font-size: 14px;
+  // line-height: 1.21;
+  // letter-spacing: 0.08em;
+
   &:not(:last-child) {
     margin-top: 30px;
   }
+
   @media screen and (min-width: 768px) {
     width: 390px;
     padding-top: 15px;
@@ -159,6 +172,7 @@ img {
     padding-top: 23px;
     padding-left: 40px;
     padding-bottom: 23px;
+
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -178,6 +192,14 @@ input:invalid:not(:placeholder-shown) + .form-error {
   display: block;
 }
 
+::placeholder {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+}
+
 .contacts__form-error {
   width: 362px;
   color: red;
@@ -189,12 +211,11 @@ input:invalid:not(:placeholder-shown) + .form-error {
 }
 
 .contacts__btn {
-  display: block;
+  display: flex;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 260px;
-  height: 48px;
+
   align-items: center;
   justify-content: center;
 
@@ -203,13 +224,13 @@ input:invalid:not(:placeholder-shown) + .form-error {
 
   @media screen and (min-width: 1344px) {
     min-width: 354px;
-    padding: 26px, 25px;
+    padding: 26px 25px;
     margin-top: 80px;
   }
 }
 
 .contacts__btn-text {
-  padding: 14px, 0px;
+  padding: 14px 0px;
   align-items: center;
   text-align: center;
   justify-content: center;
