@@ -76,7 +76,9 @@
   @media screen and (min-width: 1344px) {
     display: flex;
     margin-left: 0;
-    margin-bottom: 189px;
+    margin-bottom: 129px;
+
+    margin-left: 121px;
   }
 }
 
@@ -228,9 +230,9 @@
   }
 }
 
-.program-list__box {
+.program-list__boximg {
   position: absolute;
-  background-color: yellow;
+  // background-color: yellow;
 
   @media screen and (max-width: 767px) {
     left: 60%;
@@ -248,8 +250,8 @@
   @media screen and (min-width: 1344px) {
     width: 760px;
     height: 502px;
-    left: -14%;
-    bottom: 8%;
+    left: 0%;
+    bottom: 17%;
     z-index: 1;
   }
 }
