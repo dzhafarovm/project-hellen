@@ -91,13 +91,11 @@
 
 .menu__btn {
   box-sizing: border-box;
-   // border: none;
+  border: transparent;
   padding: 0;
   margin-left: 40px;
-  width: 21px;
-  height: 13px;
   background-color: transparent;
-
+  fill: #000000;
    @media (min-width: 1344px) {
      display: none;
    }
@@ -107,11 +105,6 @@
      fill: var(--accent-color);
     }
   transform: fill 250ms var(--cubic);
-}
-
-.menu__svg {
-    padding: 0;
-    margin: 0;
 }
 
 .menu-container {
@@ -153,16 +146,10 @@
 }
   
 .menu-toggle {
- // position: absolute;
- width: 40px;
- height: 40px;
- // top: 10px;
- // right: 15px;
- display: block;
+ box-sizing: border-box;
  margin: 0;
- padding: 0;
  background-color: transparent;
- fill: #000000;
+ color: #ffffff;
 
  &:hover,
  &:focus,
@@ -170,6 +157,10 @@
    fill: var(--accent-color);
  }
  transform: fill 250ms var(--cubic);
+}
+
+.menu-toggle svg {
+    color: #ffffff;
 }
   
 .menu__nav {
