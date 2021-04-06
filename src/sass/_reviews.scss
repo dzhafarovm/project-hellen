@@ -329,6 +329,7 @@
 }
 
 // Слайдер маленький ----------------------------------------------------------
+
 .slidersmall {
   position: relative;
   outline: none;
@@ -338,6 +339,12 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  & .slick-slider {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
