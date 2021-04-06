@@ -46,6 +46,7 @@
   margin-left: 75px;
   display: flex;
   align-items: stretch;
+  position: relative;
   @media screen and (min-width: 768px) {
     margin-left: 80px;
   }
@@ -235,8 +236,8 @@
   // background-color: yellow;
 
   @media screen and (max-width: 767px) {
-    left: 60%;
-    bottom: 29%;
+    left: 52%;
+    bottom: -7%;
     width: 176px;
     height: 137px;
   }
@@ -244,14 +245,14 @@
   @media screen and (min-width: 768px) {
     width: 384px;
     height: 280px;
-    left: 60%;
-    bottom: 26%;
+    left: 56%;
+    bottom: -14%;
   }
   @media screen and (min-width: 1344px) {
     width: 760px;
     height: 502px;
-    left: 0%;
-    bottom: 17%;
+    left: -2%;
+    bottom: -27%;
     z-index: 1;
   }
 }
