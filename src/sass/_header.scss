@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  
+
   width: 100%;
   margin-top: 30px;
 
@@ -32,7 +32,7 @@
 .nav {
   display: none;
 
-  @media (min-width: 1344px){
+  @media (min-width: 1344px) {
     display: flex;
   }
 }
@@ -44,19 +44,20 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-    &:not(:last-child) {
-        margin-right: 40px;
-    }
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--accent-color);
-    }
-   transform: color 250ms var(--cubic);
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .nav__link {
+  padding: 25px 0;
   color: var(--grey-color);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+  transform: color 250ms var(--cubic);
 }
 
 .header__btn {
@@ -72,17 +73,18 @@
   background-color: transparent;
   color: var(--accent-color);
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1344px) {
-      margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
   }
 
   @media (min-width: 1344px) {
     width: 336px;
     height: 70px;
+    margin: 0;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.14em;
@@ -96,14 +98,14 @@
   margin-left: 40px;
   background-color: transparent;
   fill: #000000;
-   @media (min-width: 1344px) {
-     display: none;
-   }
-    &:hover,
-    &:focus,
-    &:active {
-     fill: var(--accent-color);
-    }
+  @media (min-width: 1344px) {
+    display: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--accent-color);
+  }
   transform: fill 250ms var(--cubic);
 }
 
@@ -119,19 +121,28 @@
   background-color: var(--bg-backdrop);
 
   transform: translateX(100%);
-  transition: transform 250ms var(--cubic);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic),
+    visibility 250ms var(--cubic);
 
   @media (min-width: 1344px) {
     display: none;
   }
 }
-  
+
 .menu-container.is-open {
   transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu {
   padding: 30px 20px;
+
+  @media (min-width: 768px) {
+    padding: 42px 40px;
+  }
 }
 
 .menu-header {
@@ -144,20 +155,20 @@
     display: none;
   }
 }
-  
-.menu-toggle {
- box-sizing: border-box;
- margin: 0;
- background-color: transparent;
- border: transparent;
- fill: #ffffff;
 
- &:hover,
- &:focus,
- &:active {
-   fill: var(--accent-color);
- }
- transform: fill 250ms var(--cubic);
+.menu-toggle {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: transparent;
+  border: transparent;
+  fill: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--accent-color);
+  }
+  transform: fill 250ms var(--cubic);
 }
 
 .mobile-nav {
@@ -169,29 +180,29 @@
     margin-right: auto;
   }
 }
-  
+
 .menu__nav {
   font-weight: 800;
   font-size: 20px;
-  line-height: 1.80;
+  line-height: 1.8;
   letter-spacing: 0.03em;
-  
+
   @media (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
   }
 }
-  
+
 .menu__item {
   color: var(--white-color);
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--accent-color);
-    }
-  transform: color 250ms var(--cubic); 
- }
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+  transform: color 250ms var(--cubic);
+}
 
 .header-mobile {
   display: inherit;
@@ -209,7 +220,7 @@
   border: 1px solid var(--accent-color);
   background-color: transparent;
   color: var(--accent-color);
-  
+
   @media (min-width: 768px) {
     display: none;
   }
