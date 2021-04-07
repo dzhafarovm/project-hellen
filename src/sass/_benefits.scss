@@ -1,58 +1,61 @@
 .benefits {
-  text-align: left;
-  // padding-left: 30px;
-  width: 280px;
-  z-index: 2;
+  padding: 0;
   box-shadow: -5px 8px 26px rgb(0 0 0 / 4%);
-  background: linear-gradient(180deg, var(--dark-color) 18%, var(--white-color) 10%);
 
   @media screen and (min-width: 768px) {
-    background: linear-gradient(180deg, var(--dark-color) 38%, var(--white-color) 20%);
-    width: 688px;
-    padding: 0;
-    padding-top: 129px;
+    margin-top: 189px;
   }
 
   @media screen and (min-width: 1344px) {
-    width: 1314px;
-    background: var(--white-color);
-    padding-top: 0;
     position: relative;
+    z-index: 2;
+  }
+}
+
+.benefits__title {
+  max-width: 180px;
+  margin-bottom: 30px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
   }
 
-  &__title {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--white-color);
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.36;
-    letter-spacing: 0.03em;
-    padding-bottom: 30px;
+  @media screen and (min-width: 1344px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
 
-    @media screen and (max-width: 767px) {
-      width: 180px;
-    }
+.benefits-grid__container {
+  padding: 20px 30px;
+  background: var(--white-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  position: relative;
 
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 1.3;
-      padding-bottom: 20px;
-      text-align: center;
-      padding-top: 50px;
-    }
+  @media screen and(min-width: 768px) {
+    padding: 30px 96px;
+  }
 
-    @media screen and (min-width: 1344px) {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
+  @media screen and(min-width: 1344px) {
+    padding: 70px 84px;
   }
 }
 
@@ -67,24 +70,22 @@
     margin: -30px;
   }
 
-  &__task {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.43;
-    align-items: center;
-    letter-spacing: 0.08em;
-    color: var(--dark-color);
+  &__item {
+    margin-bottom: 15px;
 
-    @media screen and (min-width: 1344px) {
-      font-size: 20px;
-      line-height: 1.4;
+    @media screen and(min-width: 768px) {
+      flex-basis: calc((100% - 80px) / 2);
+      margin: 20px;
+    }
+
+    @media screen and(min-width: 1344px) {
+      flex-basis: calc((100% - 180px) / 3);
+      margin: 30px;
     }
   }
 
   &__number {
-    font-family: inherit;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
@@ -110,23 +111,16 @@
     }
   }
 
-  &__item {
-    margin-bottom: 15px;
+  &__task {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+    color: var(--dark-color);
 
-    @media screen and(min-width: 768px) {
-      flex-basis: calc((100% - 80px) / 2);
-      margin: 20px;
-    }
-
-    @media screen and(min-width: 1344px) {
-      flex-basis: calc((100% - 180px) / 3);
-      margin: 30px;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1344px) {
-    &:nth-child(5),
-    &:nth-child(6) {
-      padding-bottom: 20px;
+    @media screen and (min-width: 1344px) {
+      font-size: 20px;
+      line-height: 1.4;
     }
   }
 }
@@ -136,20 +130,5 @@
   @media screen and (min-width: 768px) and (max-width: 1344px) {
     margin-right: 50px;
     min-width: 176px;
-  }
-}
-
-.benefits-grid__container {
-  padding: 20px 30px;
-  background: var(--white-color);
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-  position: relative;
-
-  @media screen and(min-width: 768px) {
-    padding: 30px 96px;
-  }
-
-  @media screen and(min-width: 1344px) {
-    padding: 70px 84px;
   }
 }
