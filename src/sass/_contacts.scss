@@ -1,5 +1,5 @@
 .contacts {
-  max-width: 767px;
+  max-width: 1680px;
   min-width: 320px;
   min-height: 507px;
   margin-left: auto;
@@ -9,21 +9,47 @@
   // padding-left: 15px;
   padding-bottom: 50px;
 
-  background: linear-gradient(rgba(17, 21, 24, 0.8) 100%, rgba(17, 21, 24, 0.8) 100%),
-    url(../images/contacts/DSC_09702.png);
+  background: url(../images/contacts/png/DSC_1xmob.png), rgba(17, 21, 24, 1);
+  // background: linear-gradient(rgba(17, 21, 24, 1) 100%, rgba(17, 21, 24, 1) 100%),
+  //   url(../images/contacts/png/DSC_1xmob.png);
   background-repeat: no-repeat;
-  // object-position: left-bottom;
   background-position: center;
   background-size: cover;
-
   font-family: 'Montserrat', sans-serif;
   align-items: center;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contacts {
+      background: url(../images/contacts/png/DSC_2xmob.png), rgba(17, 21, 24, 1);
+    }
+  }
+
+  @media screen and (min-width: 481px) {
+    .contacts {
+      max-width: 768px;
+      background: url(../images/contacts/png/DSC_1xtablet.png), rgba(17, 21, 24, 1);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contacts {
+      background: url(../images/contacts/png/DSC_2xtablet.png), rgba(17, 21, 24, 1);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     min-width: 768px;
-    max-width: 1343px;
+    max-width: 1680px;
     padding-bottom: 70px;
+    background: url(../images/contacts/png/DSC_1xdesktop.png), rgba(17, 21, 24, 1);
   }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contacts {
+      background: url(../images/contacts/png/DSC_2xdesktop.png), rgba(17, 21, 24, 1);
+    }
+  }
+
   .container {
     min-width: 320px;
 
@@ -37,14 +63,12 @@
     padding-top: 100px;
     padding-bottom: 62px;
   }
-  // .container {
-  //   padding-right: 0px;
-  //   padding-left: 0px;
-  // }
 }
 
-img {
+.contacts img {
   max-width: 100%;
+  opacity: 20%;
+  height: auto;
 }
 
 .contacts__registration {
