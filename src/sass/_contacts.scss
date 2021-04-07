@@ -74,7 +74,7 @@
   margin-left: auto;
   text-align: center;
 
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.35;
@@ -152,11 +152,13 @@
 .contacts__accent {
   color: var(--accent-color);
 }
+
 .contacts__form-label {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .contacts__form-input {
   box-sizing: border-box;
   width: 280px;
@@ -229,7 +231,7 @@ input:invalid:not(:placeholder-shown) + .form-error {
   color: #ff0000;
   text-align: center;
   font-size: 10px;
-  display: block;
+  // display: block;
   margin-top: 3px;
   display: none;
 }
