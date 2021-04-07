@@ -248,19 +248,18 @@
   bottom: 80px;
   right: 50px;
   z-index: 9999;
-  // width: 30px;
-  // height: 30px;
-  text-align: center;
-  line-height: 35px;
-  background: var(--white-color);
-  color: var(--dark-color);
+
+  fill: var(--accent-color);
   cursor: pointer;
   border-radius: 6px;
   display: none;
+
+  transition: background-color 2500ms var(--cubic), fill 2500ms (var--cubic);
 }
 
 .back_to_top:hover {
-  background: #e9ebec;
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .back_to_top-show {
