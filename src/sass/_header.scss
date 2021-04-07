@@ -59,6 +59,9 @@
 .nav__link {
   padding: 25px 0;
   color: var(--grey-color);
+
+  transition: color 250ms var(--cubic);
+
   &:hover,
   &:focus,
   &:active {
@@ -82,9 +85,10 @@
   background-color: transparent;
   color: var(--accent-color);
 
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+
   &:hover,
   &:focus {
-    border: 1px solid var(--white-color);
     background-color: var(--accent-color);
     color: var(--white-color);
   }
@@ -126,13 +130,13 @@
     display: none;
   }
 
+  transition: fill 250ms var(--cubic);
+
   &:hover,
   &:focus,
   &:active {
     fill: var(--accent-color);
   }
-
-  transform: fill 250ms var(--cubic);
 }
 
 .menu-container {
@@ -149,6 +153,7 @@
   transform: translateX(100%);
   opacity: 0;
   visibility: hidden;
+
   transition: transform 250ms var(--cubic), opacity 250ms var(--cubic),
     visibility 250ms var(--cubic);
 
@@ -190,12 +195,13 @@
   fill: var(--white-color);
   cursor: pointer;
 
+  transition: fill 250ms var(--cubic);
+
   &:hover,
   &:focus,
   &:active {
     fill: var(--accent-color);
   }
-  transform: fill 250ms var(--cubic);
 }
 
 .mobile-nav {
@@ -223,12 +229,13 @@
 .menu__item {
   color: var(--white-color);
 
+  transition: color 250ms var(--cubic);
+
   &:hover,
   &:focus,
   &:active {
     color: var(--accent-color);
   }
-  transform: color 250ms var(--cubic);
 }
 
 .header__btn--mobile {
@@ -257,7 +264,7 @@
   border-radius: 50%;
   display: none;
 
-  transition: background-color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .back_to_top:hover {
