@@ -48,7 +48,6 @@
 
   .container {
     min-width: 320px;
-
     margin-left: auto;
     margin-right: auto;
   }
@@ -69,11 +68,11 @@
 
 .contacts__registration {
   min-width: 280px;
-  text-align: center;
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 
   font-family: Montserrat;
   font-weight: 700;
@@ -109,13 +108,13 @@
 
 .contacts__request {
   min-width: 280px;
-  padding-right: 35px;
-  padding-left: 35px;
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 35px;
+  padding-left: 35px;
+  text-align: center;
 
   font-weight: 600;
   font-size: 12px;
@@ -127,9 +126,10 @@
     min-width: 452px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     padding-right: 120px;
     padding-left: 120px;
-    margin-bottom: 40px;
+
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -158,14 +158,14 @@
   align-items: center;
 }
 .contacts__form-input {
+  box-sizing: border-box;
   width: 280px;
   height: 48px;
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
-  box-sizing: border-box;
   padding-top: 15px;
   padding-left: 20px;
   padding-bottom: 15px;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
   background: transparent;
 
   &:not(:last-child) {
@@ -178,11 +178,12 @@
 
   @media screen and (min-width: 768px) {
     width: 390px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 15px;
     padding-left: 28px;
     padding-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -225,7 +226,7 @@ input:invalid:not(:placeholder-shown) + .form-error {
 
 .contacts__form-error {
   width: 362px;
-  color: red;
+  color: #ff0000;
   text-align: center;
   font-size: 10px;
   display: block;

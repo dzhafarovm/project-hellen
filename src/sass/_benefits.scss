@@ -36,8 +36,9 @@
     width: 1px;
     height: 1px;
     margin: -1px;
-    border: 0;
     padding: 0;
+    border: 0;
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -46,10 +47,10 @@
 }
 
 .benefits-grid__container {
+  position: relative;
   padding: 20px 30px;
   background: var(--white-color);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-  position: relative;
 
   @media screen and(min-width: 768px) {
     padding: 30px 96px;
@@ -86,15 +87,15 @@
   }
 
   &__number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
     color: var(--accent-color);
-    margin-bottom: 5px;
-
-    display: flex;
-    align-items: center;
 
     @media screen and(min-width: 1344px) {
       margin-bottom: 10px;
@@ -107,8 +108,9 @@
       content: '';
       width: 20px;
       height: 2px;
-      background-color: var(--accent-color);
       margin-right: 9px;
+
+      background-color: var(--accent-color);
     }
   }
 
@@ -129,7 +131,7 @@
 .program-grid__group1,
 .program-grid__group2 {
   @media screen and (min-width: 768px) and (max-width: 1344px) {
-    margin-right: 50px;
     min-width: 176px;
+    margin-right: 50px;
   }
 }
