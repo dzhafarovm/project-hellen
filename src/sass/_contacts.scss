@@ -1,7 +1,7 @@
 .contacts {
-  max-width: 1680px;
-  min-width: 320px;
-  min-height: 507px;
+  max-width: 480px;
+  // min-width: 320px;
+  max-height: 507px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
@@ -11,37 +11,33 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: 'Montserrat', sans-serif;
   align-items: center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .contacts {
-      background: url(../images/contacts/png/DSC_2xmob.png), rgba(17, 21, 24, 1);
-    }
+    background: url(../images/contacts/png/DSC_2xmob.png), rgba(17, 21, 24, 1);
+    background-size: cover;
   }
 
-  @media screen and (min-width: 481px) {
-    .contacts {
-      max-width: 768px;
-      background: url(../images/contacts/png/DSC_1xtablet.png), rgba(17, 21, 24, 1);
-    }
-  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    max-height: 520px;
+    background: url(../images/contacts/png/DSC_1xtablet.png), rgba(17, 21, 24, 1);
+    background-size: cover;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .contacts {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/contacts/png/DSC_2xtablet.png), rgba(17, 21, 24, 1);
     }
   }
 
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
+  @media screen and (min-width: 1344px) {
+    // min-width: 768px;
     max-width: 1680px;
+    // max-height: ;
     padding-bottom: 70px;
     background: url(../images/contacts/png/DSC_1xdesktop.png), rgba(17, 21, 24, 1);
-  }
+    background-size: cover;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .contacts {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/contacts/png/DSC_2xdesktop.png), rgba(17, 21, 24, 1);
     }
   }
