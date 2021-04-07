@@ -1,5 +1,5 @@
 .contacts {
-  max-width: 480px;
+  max-width: 320px;
   // min-width: 320px;
   max-height: 507px;
   margin-left: auto;
@@ -26,6 +26,7 @@
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/contacts/png/DSC_2xtablet.png), rgba(17, 21, 24, 1);
+      background-size: cover;
     }
   }
 
@@ -39,6 +40,7 @@
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/contacts/png/DSC_2xdesktop.png), rgba(17, 21, 24, 1);
+      background-size: cover;
     }
   }
 
