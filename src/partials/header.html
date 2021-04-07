@@ -1,41 +1,52 @@
 <header class="header">
-    <section class="container flex">
+  <section class="container flex">
+    <a href="index.html">
+      <img src="images/logo1.svg" alt="Логотип" class="logo" />
+    </a>
+    <ul class="nav">
+      <li class="nav__item"><a href="#program" class="nav__link">Программы обучения</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+      <li class="nav__item"><a href="#how-we-do" class="nav__link">Варианты обучения</a></li>
+      <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+    </ul>
+    <button type="button" class="header__btn">Консультация по телефону</button>
+
+    <button
+      type="button"
+      class="menu__btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobal-menu"
+    >
+      <svg width="35" height="35" class="menu__svg">
+        <use xlink:href="./images/sprite.svg#menu_40px"></use>
+      </svg>
+    </button>
+  </section>
+
+  <div class="menu-container js-menu-container" id="mobal-menu">
+    <div class="menu">
+      <div class="menu-header">
         <a href="index.html">
-            <img src="images/logo1.svg" alt="Логотип" class="logo">
+          <img src="images/logo2.svg" alt="Логотип" class="logo logo--white" />
         </a>
-        <ul class="nav">
-            <li class="nav__item"><a href="#program" class="nav__link">Программы обучения</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
-            <li class="nav__item"><a href="#how-we-do" class="nav__link">Варианты обучения</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+        <button type="button" class="menu-toggle js-close-menu" data-modal-close>
+          <svg width="14.5" height="14.5">
+            <use xlink:href="./images/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav">
+        <ul class="menu__nav">
+          <li class="menu__item"><a class="menu__item" href="#program">Программы обучения</a></li>
+          <li class="menu__item"><a class="menu__item" href="#about">О нас</a></li>
+          <li class="menu__item"><a class="menu__item" href="#how-we-do">Варианты обучения</a></li>
+          <li class="menu__item"><a class="menu__item" href="#contacts">Контакты</a></li>
         </ul>
-        <button type="button" class="header__btn">Консультация по телефону</button>
+      </div>
 
-        <button type="button" class="menu__btn js-open-menu" aria-expanded="false" aria-controls="mobal-menu"><svg width="35" height="35" class="menu__svg"><use xlink:href="./images/sprite.svg#menu_40px"></use></svg></button>
-    </section>  
-
-    <div class="menu-container js-menu-container" id="mobal-menu">
-        <div class="menu">
-            <div class="menu-header">
-                <a href="index.html">
-                    <img src="images/logo2.svg" alt="Логотип" class="logo logo--white">
-                </a>
-                <button type="button" class="menu-toggle js-close-menu" data-modal-close><svg width="14.5" height="14.5">
-                    <use xlink:href="./images/sprite.svg#menu-close"></use>
-                </svg></button>
-            </div>
-            <div class="mobile-nav">
-                <ul class="menu__nav">
-                    <li class="menu__item"><a class="menu__item" href="#program">Программы обучения</a></li>
-                    <li class="menu__item"><a class="menu__item" href="#about">О нас</a></li>
-                    <li class="menu__item"><a class="menu__item" href="#how-we-do">Варианты обучения</a></li>
-                    <li class="menu__item"><a class="menu__item" href="#contacts">Контакты</a></li>
-                </ul>
-            </div>
-            
-
-            <button type="button" class="header__btn header__btn--mobile">Консультация по телефону</button>
-        </div>
-            
+      <button type="button" class="header__btn header__btn--mobile">
+        Консультация по телефону
+      </button>
     </div>
+  </div>
 </header>
