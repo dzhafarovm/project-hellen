@@ -81,6 +81,13 @@
   border: 1px solid var(--accent-color);
   background-color: transparent;
   color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--white-color);
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
 }
 
 @media (max-width: 768px) {

@@ -259,6 +259,16 @@ input:invalid:not(:placeholder-shown) + .form-error {
     padding: 26px 25px;
     margin-top: 80px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+  }
+
+  &:hover .contacts__btn-text,
+  &:focus .contacts__btn-text {
+    color: var(--accent-color);
+  }
 }
 
 .contacts__btn-text {
