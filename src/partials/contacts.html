@@ -1,9 +1,4 @@
 <section class="contacts" id="contacts">
-  <!-- <img 
-        srcset="../images/contacts/DSC_1xmob.png 1x, ../images/contacts/DSC_2xmob.png 2x" 
-        src="../images/contacts/DSC_1xmob.png" 
-        alt=""
-        width="480"> -->
   <div class="container">
     <p class="contacts__registration">
       Регистрация на <span class="contacts__accent">бесплатную</span> телефонную
@@ -15,8 +10,13 @@
     </p>
     <form class="contacts__form">
       <label class="contacts__form-label">
-        <input type="text" class="contacts__form-input" name="name" placeholder="Имя*" required />
-        <!-- pattern="[A-Za-zА-Яа-яЁё] -->
+        <input 
+          type="text" 
+          class="contacts__form-input" 
+          name="name" 
+          placeholder="Имя*" 
+          required 
+        />
       </label>
       <label class="contacts__form-label">
         <input
@@ -28,9 +28,7 @@
           minlength="10"
           maxlength="13"
         />
-        <span class="contacts__form-error"
-          >Это поле должно содержать телефон в формате +38 (123) 456-78-90</span
-        >
+        <span class="contacts__form-error"> Это поле должно содержать телефон в формате +38 (123) 456-78-90</span>
       </label>
     </form>
     <button type="submit" class="contacts__btn">
