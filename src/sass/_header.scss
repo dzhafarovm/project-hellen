@@ -1,0 +1,277 @@
+.header {
+  position: absolute;
+
+  width: 100%;
+  margin-top: 30px;
+
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: 1344px) {
+    margin-top: 33px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+  height: 28.53px;
+
+  @media (min-width: 768px) {
+    width: 128px;
+    height: 45px;
+  }
+}
+
+.nav {
+  display: none;
+
+  @media (min-width: 1344px) {
+    display: block;
+  }
+}
+
+.nav__list {
+  @media (min-width: 1344px) {
+    display: flex;
+  }
+}
+
+.nav__item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.nav__link {
+  padding: 25px 0;
+  color: var(--grey-color);
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+
+  transform: color 250ms var(--cubic);
+}
+
+.header__btn {
+  box-sizing: border-box;
+  width: 260px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  color: var(--accent-color);
+
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__btn {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1344px) {
+  .header__btn {
+    width: 336px;
+    height: 70px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+  }
+}
+
+.menu__btn {
+  box-sizing: border-box;
+  padding: 0;
+  margin-left: 40px;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  fill: #000000;
+
+  @media (min-width: 1344px) {
+    display: none;
+  }
+
+  transition: fill 250ms var(--cubic);
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  z-index: 5;
+
+  background-color: var(--bg-backdrop);
+
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic),
+    visibility 250ms var(--cubic);
+
+  @media (min-width: 1344px) {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  padding: 30px 20px;
+
+  @media (min-width: 768px) {
+    padding: 42px 40px;
+  }
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo--white {
+  @media (min-width: 1344px) {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: transparent;
+  border: transparent;
+  fill: var(--white-color);
+  cursor: pointer;
+
+  transition: fill 250ms var(--cubic);
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-nav {
+  margin-top: 50px;
+  @media (min-width: 768px) {
+    display: flex;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.menu__nav {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.menu__item {
+  color: var(--white-color);
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.header__btn--mobile {
+  display: inherit;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.back_to_top {
+  position: fixed;
+  padding: 12px;
+
+  bottom: 80px;
+  right: 50px;
+  z-index: 9999;
+
+  fill: var(--accent-color);
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  display: none;
+
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
+}
+
+.back_to_top:hover {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
+.back_to_top-show {
+  display: block;
+}

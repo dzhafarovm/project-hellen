@@ -1,0 +1,137 @@
+.benefits {
+  padding-left: 15px;
+  padding-rigth: 15px;
+  box-shadow: -5px 8px 26px rgb(0 0 0 / 4%);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 189px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.benefits__title {
+  max-width: 180px;
+  margin-bottom: 30px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1344px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.benefits-grid__container {
+  position: relative;
+  padding: 20px 30px;
+  background: var(--white-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and(min-width: 768px) {
+    padding: 30px 96px;
+  }
+
+  @media screen and(min-width: 1344px) {
+    padding: 70px 84px;
+  }
+}
+
+.benefits-grid {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+
+  @media screen and(min-width: 1344px) {
+    margin: -30px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    @media screen and(min-width: 768px) {
+      flex-basis: calc((100% - 80px) / 2);
+      margin: 20px;
+    }
+
+    @media screen and(min-width: 1344px) {
+      flex-basis: calc((100% - 180px) / 3);
+      margin: 30px;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+
+    @media screen and(min-width: 1344px) {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.65;
+    }
+
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 20px;
+      height: 2px;
+      margin-right: 9px;
+
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__task {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+    color: var(--dark-color);
+
+    @media screen and (min-width: 1344px) {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.program-grid__group1,
+.program-grid__group2 {
+  @media screen and (min-width: 768px) and (max-width: 1344px) {
+    min-width: 176px;
+    margin-right: 50px;
+  }
+}
